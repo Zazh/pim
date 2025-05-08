@@ -1,0 +1,28 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgresuser
+      POSTGRES_PASSWORD: kb971033
+      POSTGRES_DB: db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build:
+      context: ./aldeso
+      dockerfile: Dockerfile
+    env_file:
+      - ./aldeso/.env
+    volumes:
+      - ./aldeso/app:/app
+      - ./aldeso/app/media:/app/media
+    ports:
+      - "8005:8005"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

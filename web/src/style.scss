@@ -1,0 +1,58 @@
+.room-1 {
+    background: url("../static/room-1.svg") no-repeat right bottom;
+    background-size: cover;
+}
+.room-2 {
+    background: url("../static/room-2.svg") no-repeat left bottom;
+    background-size: cover;
+}
+.rect-start {
+    background: url("../static/rect_start.svg") no-repeat right top;
+    background-size: cover;
+}
+.rect-center {
+    background: url("../static/rect_center.svg") no-repeat right top;
+    background-size: cover;
+}
+body {
+    background: #F0F0F0;
+}
+.hero {
+    @apply flex flex-nowrap h-[30rem] justify-between flex-col p-6 row-span-2 xl:col-span-12 xl:col-start-5 md:col-span-16 col-span-full border-x-[1px] border-gray-300 gap-4
+}
+.hero-title {
+    @apply text-6xl leading-none font-bold md:text-[5rem]
+}
+.navigations {
+    @apply h-14 border-b-[1px] border-gray-300
+}
+.container-default {
+    @apply w-full grid grid-cols-24
+}
+.card-offset {
+    @apply relative hidden xl:block
+}
+.card {
+    @apply col-span-24 md:col-span-8 xl:col-span-6 border-gray-300
+}
+.card-mini {
+    @apply col-span-24 md:col-span-8 xl:col-span-4 border-gray-300
+}
+.product-image-container {
+    @apply flex items-center justify-center px-6 md:p-0
+}
+.product-mini-image-container {
+    @apply flex items-center justify-center md:p-0
+}
+.product-image {
+    @apply border-gray-300 border-x-[1px] md:border-none w-full aspect-square
+}
+.product-mini-image {
+    @apply  md:border-none w-full aspect-square
+}
+.product-list {
+    @apply flex justify-between items-center px-6 py-3 border-b-[1px] border-gray-300 w-full
+}
+.product-list:last-child {
+    @apply border-none
+}

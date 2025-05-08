@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/styles.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+<section class="container-default">
+    <div class="hero room-1">
+        <div>
+            <img src="./static/logo.svg" alt="" class="w-[4rem] aspect-square" />
+        </div>
+        <div>
+            <h1 class="hero-title poppins-bold">
+                Aluminum <br>
+                Decorative <br>
+                Solutions
+            </h1>
+        </div>
+    </div>
+    <div class="room-2 row-span-2 md:col-span-8 hidden md:flex border-r-[1px] border-gray-300 gap-4">
+        <!-- empty -->
+    </div>
+</section>
+
+<section class="container-default border-y-[1px] border-gray-300">
+    <div class="[ px-6 py-4 md:px-6 md:py-6 ] xl:col-span-12 xl:col-start-5 md:col-span-16 col-span-full flex border-x-[1px] border-gray-300 gap-4">
+        <p class="md:text-sm pb-4 md:p-0 text-sm 2xl:text-lg poppins-regular leading-snug tracking-wider">
+            Производим алюминиевые профили для скрытого <br class="hidden md:block" />
+            плинтуса и декоративной отделки высокого качества <br class="hidden md:block" />
+            Казахстанского производства
+        </p>
+    </div>
+    <div class="xl:col-span-6 md:col-span-8 [ border-r-[1px] border-gray-300 ]">
+        <!-- Empty -->
+    </div>
+</section>
+
+<!-- BEGIN navigations -->
+<nav class="navigations container-default">
+    <div class="[ hidden ] col-span-4 xl:flex">
+        <button class="js-sidebar-open ps-[1rem] gap-4 flex items-center">
+            <svg width="48" height="22" viewBox="0 0 48 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H48V3H0V0Z" fill="black"/>
+                <path d="M0 19H48V22H0V19Z" fill="black"/>
+            </svg>
+            <span class="2xl:text-2xl text-xl tracking-widest font-semibold text-black">MENU</span>
+        </button>
+    </div>
+
+    <div class="xl:col-span-12 md:col-span-16 col-span-full flex items-center justify-between xl:justify-end border-x-[1px] border-gray-300">
+        <button class="js-sidebar-open ps-[1.5rem] gap-4 flex xl:hidden items-center" >
+            <svg width="48" height="22" viewBox="0 0 48 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H48V3H0V0Z" fill="black"/>
+                <path d="M0 19H48V22H0V19Z" fill="black"/>
+            </svg>
+            <span class="[ hidden md:block ] 2xl:text-2xl text-xl tracking-widest font-semibold text-black">MENU</span>
+        </button>
+
+        <div class="flex items-center justify-between gap-3 w-1/3 sm:w-full">
+            <button data-target=".search-modal" class="js-modal-open [ px-3 py-2.5 me-2 ] inline-flex md:hidden ] [ w-full ] [ gap-2 items-center ] cursor-pointer  focus-within:ring-4 focus-within:outline-hidden text-sm hover:bg-gray-300 text-black [ border-[1px] border-gray-300 ] focus-within:ring-gray-200 rounded-sm">
+                <svg width="15" height="15" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5236 8.68L14 12.2063L12.25 14L8.68437 10.521C7.78507 11.0806 6.74671 11.3765 5.6875 11.375C2.54625 11.375 0 8.82263 0 5.6875C0 2.54625 2.55238 0 5.6875 0C8.82875 0 11.375 2.55238 11.375 5.6875C11.3766 6.74498 11.0816 7.78172 10.5236 8.68ZM1.74738 5.6455C1.74738 7.8155 3.50962 9.583 5.68488 9.583C7.85488 9.583 9.62237 7.81988 9.62237 5.6455C9.62237 3.4755 7.85925 1.708 5.68488 1.708C3.51488 1.708 1.74738 3.47025 1.74738 5.6455Z" fill="#3947FF"/>
+                </svg>
+                <span class="[ w-[5rem] md:w-auto ] text-left font-bold tracking-wide uppercase">Поиск</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="[ hidden md:flex ] col-span-8 xl:col-span-6 items-center justify-start border-r-[1px] border-gray-300">
+        <button data-target=".search-modal" class="js-modal-open [ mx-2 px-3.5 py-2.5 ] [ w-full ] [ gap-1.5 inline-flex items-center ] cursor-pointer focus-within:ring-4 focus-within:outline-hidden text-sm hover:bg-gray-300 text-black [ border-[1px] border-gray-300 ] focus-within:ring-gray-200 rounded-sm">
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5236 8.68L14 12.2063L12.25 14L8.68437 10.521C7.78507 11.0806 6.74671 11.3765 5.6875 11.375C2.54625 11.375 0 8.82263 0 5.6875C0 2.54625 2.55238 0 5.6875 0C8.82875 0 11.375 2.55238 11.375 5.6875C11.3766 6.74498 11.0816 7.78172 10.5236 8.68ZM1.74738 5.6455C1.74738 7.8155 3.50962 9.583 5.68488 9.583C7.85488 9.583 9.62237 7.81988 9.62237 5.6455C9.62237 3.4755 7.85925 1.708 5.68488 1.708C3.51488 1.708 1.74738 3.47025 1.74738 5.6455Z" fill="#3947FF"/>
+            </svg>
+            <span class="font-bold tracking-wide uppercase">Поиск</span>
+        </button>
+    </div>
+</nav>
+<!-- END navigations -->
+
+<!-- BEGIN card -->
+<section class="container-default">
+
+    <!-- BEGIN title -->
+        <div class="xl:col-start-5 xl:col-span-12 md:col-span-16 col-span-full [ border-b-[1px] border-x-[1px] border-gray-300 ]">
+            <h1 class="tracking-wide text-5xl font-bold px-6 pt-12 pb-6">
+                Каталог
+            </h1>
+        </div>
+        <div class="hidden md:block xl:col-span-6 md:col-span-8 [ border-b-[1px] border-r-[1px] border-gray-300 ]">
+            <!-- Empty -->
+        </div>
+    <!-- END title -->
+
+
+    <!-- empty card -->
+    <div  style="box-shadow: 1px 0 0 var(--color-gray-300)" class="card-offset col-span-4">
+        <div class="p-sm absolute bottom-0 w-full [ border-y-[1px] border-gray-300 ]">
+            <h2 class="[ invisible ] [ py-4 ps-6 ] text-md">name</h2>
+        </div>
+    </div>
+
+    <article class="card [ border-r-[1px] ]">
+        <a href="/" class="block">
+            <div class="product-image-container">
+                <img src="static/products/400x300.png" class="product-image" alt="">
+            </div>
+            <div class="p-sm [ border-y-[1px] border-gray-300 ]">
+                <h2 class="[ pb-8 pt-4 ] [ md:py-4 ps-6 ] text-md font-bold uppercase tracking-wider">name</h2>
+            </div>
+        </a>
+    </article>
+
+    <article class="card [ border-r-[1px] ]">
+        <a href="/" class="block">
+            <div class="product-image-container">
+                <img src="static/products/400x300.png" class="product-image" alt="">
+            </div>
+            <div class="p-sm [ border-y-[1px] border-gray-300 ]">
+                <h2 class="[ pb-8 pt-4 ] [ md:py-4 ps-6 ] text-md font-bold uppercase tracking-wider">name</h2>
+            </div>
+        </a>
+    </article>
+
+    <article class="card [ border-r-[1px] ]">
+        <a href="/" class="block">
+            <div class="product-image-container">
+                <img src="static/products/400x300.png" class="product-image" alt="">
+            </div>
+            <div class="p-sm [ border-y-[1px] border-gray-300 ]">
+                <h2 class="[ pb-8 pt-4 ] [ md:py-4 ps-6 ] text-md font-bold uppercase tracking-wider">name</h2>
+            </div>
+        </a>
+    </article>
+
+    <!-- empty card -->
+    <div class="card-offset col-span-2">
+        <div class="p-sm absolute bottom-0 w-full [ border-y-[1px] border-gray-300 ]">
+            <h2 class="[ invisible ] [ py-4 ps-6 ] text-md">name</h2>
+        </div>
+    </div>
+    <!-- empty card -->
+</section>
+<!-- END card -->
+
+<!-- BEGIN title -->
+<section class="container-default">
+    <div class="xl:col-start-5 xl:col-span-12 md:col-span-16 col-span-full [ border-x-[1px] border-gray-300 ]">
+        <h1 class="tracking-wide text-5xl font-bold px-6 pt-[4rem] pb-[3rem]">
+            Контакты
+        </h1>
+        <ul class="pb-[4rem]">
+            <li class="flex items-center justify-between border-y-[1px] border-gray-300 px-6 py-3 font-semibold">
+                <span class="text-sm">E-mail</span>
+                <a href="#" class="text-sm text-blue-800">
+                    <span>sales@aldeso.kz</span>
+                </a>
+            </li>
+            <li class="flex items-center justify-between border-b-[1px] border-gray-300 px-6 py-3 font-semibold">
+                <span class="text-sm">E-mail</span>
+                <a href="#" class="text-sm text-blue-800">
+                    <span>sales@aldeso.kz</span>
+                </a>
+            </li>
+            <li class="flex items-center justify-between border-b-[1px] border-gray-300 px-6 py-3 font-semibold">
+                <span class="text-sm">E-mail</span>
+                <a href="#" class="text-sm text-blue-800">
+                    <span>sales@aldeso.kz</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="xl:col-span-6 md:col-span-8 hidden md:block [ border-r-[1px] border-gray-300 ]">
+        <!-- Empty -->
+    </div>
+</section>
+<!-- END title -->
+
+<!-- BEGIN Mozaik rect -->
+<div class="container-default border-t-[1px] border-gray-300 ]">
+    <div class="[ rect-start h-[12rem] ] card-offset hidden xl:block xl:col-span-4"></div>
+    <div class="[ rect-center h-[12rem] ] xl:col-span-12 md:col-span-16 col-span-full"></div>
+    <div class="md:col-span-8 xl:col-span-6 [ border-r-[1px] border-gray-300 ]"></div>
+</div>
+<!-- END Mozaik rect -->
+
+<!-- BEGIN footer -->
+<footer class="bg-black [ px-6 py-3 ] [ flex items-center justify-between ]">
+    <span class="text-sm uppercase tracking-wider text-white">© 2025 Компания «Aluminuim.kz»</span>
+    <div class="hidden md:block">
+        <a href="#" class="text-sm uppercase tracking-wider text-white">cookie</a>
+        <a href="#" class="text-sm uppercase tracking-wider text-white ps-6">privacy policy</a>
+    </div>
+</footer>
+<!-- END footer -->
+
+<!-- BEGIN Sidebar -->
+<aside id="sidebar" class="fixed top-0 left-0 h-screen w-5/6 md:w-1/2 lg:w-1/4 bg-white text-black transition-transform duration-300 -translate-x-full z-50">
+    <div class="navbar-burger active [ border-b-1 border-b-gray-300 px-5 h-14 ] [ flex items-center gap-5 ]">
+        <button class="js-sidebar-close burger-icon-w [ flex items-center justify-center ]" >
+            <svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+                <g transform="translate(24, 24)">
+                    <!-- Верхняя линия, повернутая на 45 градусов -->
+                    <rect x="-24" y="-2" width="48" height="4" fill="#000" transform="rotate(45)"/>
+                    <!-- Нижняя линия, повернутая на -45 градусов -->
+                    <rect x="-24" y="-2" width="48" height="4" fill="#000" transform="rotate(-45)"/>
+                </g>
+            </svg>
+        </button>
+        <span class="2xl:text-2xl text-xl tracking-widest font-semibold text-black">MENU</span>
+    </div>
+    <div class="px-6 pt-8 flex flex-col gap-4">
+        <a href="/" rel="external" class="block pt-2 font-[500] text-black uppercase">Главная</a>
+        <a href="/category" rel="external" class="block pt-2 font-[500] text-black uppercase">Продукция</a>
+        <a href="/pos" rel="external" class="block pt-2 font-[500] text-black uppercase">Точки продаж</a>
+    </div>
+</aside>
+<div id="overlay" class="js-sidebar-close fixed inset-0 bg-black/50  backdrop-blur-sm z-40 hidden"></div>
+<!-- END Sidebar -->
+
+<!-- ▸ Модальное окно -->
+<div class="js-modal search-modal fixed inset-0 z-50 hidden">
+    <!-- Фон‑оверлей -->
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0
+              transition-opacity duration-300" data-modal-overlay></div>
+
+    <!-- Контейнер, центрирующий окно -->
+    <div class="absolute inset-0 flex items-center justify-center p-4">
+        <!-- Сам «панель» модалки -->
+        <div class="max-h-[90vh] min-h-[90vh] md:min-h-[30rem] w-full max-w-3xl overflow-hidden rounded-sm
+                bg-white shadow-xl ring-1 ring-black/10
+                transform opacity-0 scale-95
+                transition-all duration-300"
+             data-modal-panel>
+
+            <!-- ╭── Заголовок / поиск ───────────────────────────────╮ -->
+            <div class="flex items-center justify-between gap-2 border-b px-4 py-3">
+                <div class="flex w-full items-center gap-3">
+                    <!-- иконка лупы -->
+                    <svg class="shrink-0" width="20" height="20" viewBox="0 0 14 14" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5236 8.68L14 12.2063L12.25 14L8.68437 10.521C7.78507 11.0806 6.74671 11.3765 5.6875 11.375C2.54625 11.375 0 8.82263 0 5.6875C0 2.54625 2.55238 0 5.6875 0C8.82875 0 11.375 2.55238 11.375 5.6875C11.3766 6.74498 11.0816 7.78172 10.5236 8.68ZM1.74738 5.6455C1.74738 7.8155 3.50962 9.583 5.68488 9.583C7.85488 9.583 9.62237 7.81988 9.62237 5.6455C9.62237 3.4755 7.85925 1.708 5.68488 1.708C3.51488 1.708 1.74738 3.47025 1.74738 5.6455Z" fill="#3947FF"/>
+                    </svg>
+                    <input type="text"
+                           placeholder="Введите название или артикул"
+                           class="w-full py-2 text-lg  font-medium text-black placeholder:text-gray-400
+                        outline-none"/>
+                </div>
+                <!-- Кнопка закрытия -->
+                <button class="grid h-8 w-8 place-items-center rounded hover:bg-gray-100"
+                        data-modal-close aria-label="Закрыть">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <!-- × -->
+                        <path d="M6 6l12 12M18 6l-12 12" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div aria-label="body-header" class=" [ p-4 ] flex items-center border-b-[1px] border-gray-300">
+                <div class="flex flex-wrap items-center gap-3">
+                    <svg width="18px" height="16px" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5284 7.42827C3.49934 7.62826 3.49934 7.79968 3.49934 7.99967H1.75541C1.75541 7.79968 1.75541 7.62826 1.78448 7.42827H3.5284Z" fill="#585858"/>
+                        <path d="M10.3297 3.99984H9.45775C9.22523 3.99984 9.02177 4.19983 9.02177 4.42839V8.1711C9.02177 8.28538 9.0799 8.39966 9.13803 8.48537L11.5795 10.8853C11.7539 11.0567 12.0155 11.0567 12.1899 10.8853L12.8003 10.2853C12.9747 10.1139 12.9747 9.85674 12.8003 9.68532L10.7657 7.65683V4.42839C10.7657 4.19983 10.5622 3.99984 10.3297 3.99984Z" fill="#585858"/>
+                        <path d="M9.89373 0C5.59205 0 2.07513 3.28558 1.78448 7.42827C1.78448 7.51398 1.75541 7.62826 1.75541 7.71397H0.447468C0.0696176 7.71397 -0.133841 8.14253 0.0986828 8.39966L2.27859 10.9996C2.45298 11.1995 2.7727 11.1995 2.9471 10.9996L5.127 8.39966C5.35953 8.11396 5.15607 7.71397 4.77822 7.71397H3.49934C3.49934 7.62826 3.49934 7.51398 3.49934 7.42827C3.78999 4.2284 6.55121 1.71422 9.86467 1.71422C13.6432 1.71422 16.6369 4.94266 16.23 8.71393C15.9393 11.4281 13.3235 13.9994 10.5332 14.2566C8.46953 14.4566 6.52214 13.7137 5.15607 12.2566C4.98168 12.0567 4.74915 11.9424 4.51663 12.2281L3.81906 13.0566C3.67373 13.228 3.78999 13.3423 3.93532 13.4852C5.50485 15.1137 7.65569 16.0279 9.98093 15.9993C14.1664 15.9422 17.6833 12.6852 17.9739 8.57108C18.3518 3.91413 14.5733 0 9.89373 0Z" fill="#585858"/>
+                    </svg>
+                    <span class="{ $errorMsg ? 'text-red-600' : 'text-gray-600' } font-bold">
+                        ds
+                    </span>
+                </div>
+            </div>
+
+            <!-- ╭── Контент ──────────────────────────────────────────╮ -->
+            <div class="overflow-y-auto">
+                <!-- пример блока с результатами -->
+                <a href="#"
+                   class="flex items-center justify-between gap-3 border-b border-gray-300 px-4 py-4
+                  hover:bg-gray-100">
+                    <h3 class="w-full truncate text-md font-bold uppercase">Название товара</h3>
+                    <span class="flex items-center gap-3 text-gray-600">
+                                {p.category_name}
+                                <svg width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12L6 6.5L1 1" stroke="#585858" stroke-width="2"/>
+                                </svg>
+                            </span>
+                </a>
+
+                <!-- пустая история поиска -->
+                <div class="pt-[5rem] text-center flex items-center justify-center">
+                    <div class=" flex items-center justify-center gap-3">
+                        <svg width="24px" height="22px" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5284 7.42827C3.49934 7.62826 3.49934 7.79968 3.49934 7.99967H1.75541C1.75541 7.79968 1.75541 7.62826 1.78448 7.42827H3.5284Z" fill="#585858"/>
+                            <path d="M10.3297 3.99984H9.45775C9.22523 3.99984 9.02177 4.19983 9.02177 4.42839V8.1711C9.02177 8.28538 9.0799 8.39966 9.13803 8.48537L11.5795 10.8853C11.7539 11.0567 12.0155 11.0567 12.1899 10.8853L12.8003 10.2853C12.9747 10.1139 12.9747 9.85674 12.8003 9.68532L10.7657 7.65683V4.42839C10.7657 4.19983 10.5622 3.99984 10.3297 3.99984Z" fill="#585858"/>
+                            <path d="M9.89373 0C5.59205 0 2.07513 3.28558 1.78448 7.42827C1.78448 7.51398 1.75541 7.62826 1.75541 7.71397H0.447468C0.0696176 7.71397 -0.133841 8.14253 0.0986828 8.39966L2.27859 10.9996C2.45298 11.1995 2.7727 11.1995 2.9471 10.9996L5.127 8.39966C5.35953 8.11396 5.15607 7.71397 4.77822 7.71397H3.49934C3.49934 7.62826 3.49934 7.51398 3.49934 7.42827C3.78999 4.2284 6.55121 1.71422 9.86467 1.71422C13.6432 1.71422 16.6369 4.94266 16.23 8.71393C15.9393 11.4281 13.3235 13.9994 10.5332 14.2566C8.46953 14.4566 6.52214 13.7137 5.15607 12.2566C4.98168 12.0567 4.74915 11.9424 4.51663 12.2281L3.81906 13.0566C3.67373 13.228 3.78999 13.3423 3.93532 13.4852C5.50485 15.1137 7.65569 16.0279 9.98093 15.9993C14.1664 15.9422 17.6833 12.6852 17.9739 8.57108C18.3518 3.91413 14.5733 0 9.89373 0Z" fill="#585858"/>
+                        </svg>
+                        <span class="text-gray-600 font-medium text-2xl">Нет истории поиска</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('overlay');
+
+        const openSidebar = () => {
+            sidebar.classList.remove('-translate-x-full');
+            sidebar.classList.add('translate-x-0');
+            overlay.classList.remove('hidden');
+        };
+
+        const closeSidebar = () => {
+            sidebar.classList.add('-translate-x-full');
+            sidebar.classList.remove('translate-x-0');
+            overlay.classList.add('hidden');
+        };
+
+        // навешиваем на ВСЕ кнопки‑триггеры
+        document.querySelectorAll('.js-sidebar-open').forEach(btn =>
+            btn.addEventListener('click', openSidebar)
+        );
+
+        // навешиваем на все элементы, которые должны закрывать
+        document.querySelectorAll('.js-sidebar-close').forEach(el =>
+            el.addEventListener('click', closeSidebar)
+        );
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const openBtns = document.querySelectorAll('.js-modal-open');
+
+        openBtns.forEach(btn => {
+            const selector = btn.dataset.target;
+            const modal = document.querySelector(selector);
+
+            if (!modal) return;
+
+            const overlay = modal.querySelector('[data-modal-overlay]');
+            const panel = modal.querySelector('[data-modal-panel]');
+            const closeBtns = modal.querySelectorAll('[data-modal-close]');
+
+            const showModal = () => {
+                modal.classList.remove('hidden');
+                requestAnimationFrame(() => {
+                    overlay.classList.remove('opacity-0');
+                    panel.classList.remove('opacity-0', 'scale-95');
+                });
+            };
+
+            const hideModal = () => {
+                overlay.classList.add('opacity-0');
+                panel.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => modal.classList.add('hidden'), 300);
+            };
+
+            btn.addEventListener('click', showModal);
+            overlay.addEventListener('click', hideModal);
+            closeBtns.forEach(el => el.addEventListener('click', hideModal));
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape' && !modal.classList.contains('hidden')) hideModal();
+            });
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
